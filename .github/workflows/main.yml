@@ -1,7 +1,8 @@
 name: Main
 
 on:
-  push:
+   workflow_run:
+    workflows: ["main"]
     branches: ["main"]
     tags:
       - "*-?v[0-9]+*"
